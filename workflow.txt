@@ -1,0 +1,75 @@
+pipeline {
+    agent none
+    stages {
+        stage('build') {
+            steps {
+                script {
+                    echo "Building the application..."
+                }
+            }
+        }
+         stage('build1') {
+            steps {
+                script {
+                    echo "Build the application..."
+                }
+            }
+        }
+         stage('pull') {
+            steps {
+                script {
+                    echo "pull the application..."
+                }
+            }
+        }
+         stage('push') {
+            steps {
+                script {
+                    echo "push the application..."
+                }
+            }
+        }
+         stage('sample') {
+            steps {
+                script {
+                    echo "sample the application..."
+                }
+            }
+        }
+        stage('test') {
+            steps {
+                script {
+                    echo "Testing the application..."
+                }
+            }
+        }
+         stage('rvvar') {
+            steps {
+                script {
+                    echo "rvvar the application..."
+                }
+            }
+        }
+         stage('stat') {
+            steps {
+                script {
+                    echo "poisson the application..."
+                }
+            }
+        }
+         stage('binomial') {
+            steps {
+                script {
+                    echo "binomial the application..."
+                }
+            }
+        }
+        stage('deploy') {
+            steps {
+                script {
+                    echo "Deploying the application..."
+                }
+            }
+        }
+    }
+}
